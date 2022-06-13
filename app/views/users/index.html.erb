@@ -1,0 +1,10 @@
+<h1>User<h1>
+
+<%@user.each do |user|%>
+<%=user.username%>
+<%user.email%>
+<%=user.id%>
+<%= link_to 'Edit', edit_user_path(user.id) %>
+<%end%>
+
+<%=link_to "New Article",new_user_path%>
